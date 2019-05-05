@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Vinsol Quiz</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+</head>
+<body>
+	<header role="banner">
+	   <h1> VinSol Quiz</h1>
+	</header>
+	<main role="main">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="start-section1">
+						<span>Arithmetic Quiz Section 1</span>
+						<hr/>
+						<div class="form-group">
+							<label class="control-label col-sm-8" for="email">Enter No of Question (3-30):</label>
+							<div class="col-sm-4">
+								<input class="form-control" type="number" id="numOfQues1" name="numOfQues1">
+							</div>
+						</div><br/>
+						<div class="form-group">
+							<label class="control-label col-sm-8" for="email">Enter Range:</label>
+							<div class="col-sm-4">
+								<input class="form-control" type="number" id="range1" name="range1">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-8" for="email">Select Operator:</label>
+							<div class="col-sm-4">
+								<select id="opr1" class="form-control">
+									<option value="-1">Random</option>
+									<option value="0">+</option>
+									<option value="1">-</option>
+									<option value="2">*</option>
+									<option value="3">/</option>
+								</select>
+							</div>
+						</div><br/>
+						<span id="errorMsg" style="display:none;"></span><br/><br/>
+						<input type="button" value="Start Quiz" class="btn btn-primary center-block js-start-button1">
+				</div>
+				<div class="quiz-box1">
+					<div class="progress-section1">
+							<span class="question-count1"></span>
+							<hr>
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ_wbUm1vMiakLbNj1q4biA8lro-mtV_OjvS_wG6q-_9M5peKRBQ" alt="score board image" class="score-img">
+							<span class="score-card1"></span>
+					</div>
+					
+					<div class="quiz-section">
+						<form class="questions-form">
+							<p id="ques1"></p>
+							<label class="options">
+								<input  id="answer1" type="number" name="answer1">
+								<span></span>
+							</label><br/>
+							<input type="button" value="Submit Answer" class="btn btn-primary center-block js-submit-button1">
+						</form>	
+					</div>
+				</div>
+				<section class="end-section1">
+						<h4></h4>
+						<hr/>
+						<div class="correct">
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG7HVtoF91KK85ZKPlBL0wzdW8URDpziD2PRsFZm4awGyD2BS-" alt="correct-icon">
+							<span class="count"></span>
+						</div>
+						<div class="wrong">
+								<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyGk_AHvtphypbgsJNN6qI1qX7v1b2vRXBgLwgGMcSZ95oZqaqug" alt="wrong-icon">
+								<span class="count"></span>
+						</div><br/>
+						<input type="button" class="btn btn-primary center-block js-startover-button1" value="Start Over">
+				</section>
+			</div>
+			<div class="col-sm-6">
+				<div class="start-section2">
+						<span>Arithmetic Quiz Section 2</span>
+						<hr/>
+						<div class="form-group">
+							<label class="control-label col-sm-8" for="email">Enter No of Question (3-30):</label>
+							<div class="col-sm-4">
+								<input class="form-control" type="number" id="numOfQues2" name="numOfQues2">
+							</div>
+						</div><br/>
+						<div class="form-group">
+							<label class="control-label col-sm-8" for="email">Enter Range:</label>
+							<div class="col-sm-4">
+								<input class="form-control" type="number" id="range2" name="range2">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-8" for="email">Select Operator:</label>
+							<div class="col-sm-4">
+								<select id="opr2" class="form-control">
+									<option value="-1">Random</option>
+									<option value="0">+</option>
+									<option value="1">-</option>
+									<option value="2">*</option>
+									<option value="3">/</option>
+								</select>
+							</div>
+						</div><br/>
+						<span id="errorMsg" style="display:none;"></span><br/><br/>
+						<input type="button" value="Start Quiz" class="btn btn-primary center-block js-start-button2">
+				</div>
+				<div class="quiz-box2">
+					<div class="progress-section2">
+							<span class="question-count2"></span>
+							<hr>
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ_wbUm1vMiakLbNj1q4biA8lro-mtV_OjvS_wG6q-_9M5peKRBQ" alt="score board image" class="score-img">
+							<span class="score-card2"></span>
+					</div>
+					
+					<div class="quiz-section">
+						<form class="questions-form">
+							<p id="ques2"></p>
+							<label class="options">
+								<input  id="answer2" type="number" name="answer2">
+								<span></span>
+							</label><br/>
+							<input type="button" value="Submit Answer" class="btn btn-primary center-block js-submit-button2">
+						</form>	
+					</div>
+				</div>
+				<section class="end-section2">
+						<h4></h4>
+						<hr/>
+						<div class="correct">
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG7HVtoF91KK85ZKPlBL0wzdW8URDpziD2PRsFZm4awGyD2BS-" alt="correct-icon">
+							<span class="count"></span>
+						</div>
+						<div class="wrong">
+								<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyGk_AHvtphypbgsJNN6qI1qX7v1b2vRXBgLwgGMcSZ95oZqaqug" alt="wrong-icon">
+								<span class="count"></span>
+						</div>
+						<br/>
+						<input type="button" class="btn btn-primary center-block js-startover-button2" value="Start Over">
+					</section>
+			</div>
+		</div>
+
+      <section class="feedback-section1">
+        <div class="popup-box1">
+          <button type="button" class="close-button js-close-button1">X</button>
+          <img src="" class="feedback-icon">
+          <span id="popup-text"></span>
+        </div>
+      </section>
+			<section class="feedback-section2">
+        <div class="popup-box2">
+          <button type="button" class="close-button js-close-button2">X</button>
+          <img src="" class="feedback-icon">
+          <span id="popup-text"></span>
+        </div>
+      </section>
+  </main>
+	<script src="//code.jquery.com/jquery.min.js"></script>
+  <script type="text/javascript" src="/javascripts/index.js"></script>
+</body>
+</html>

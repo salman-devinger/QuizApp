@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JavaScript Quiz</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+</head>
+<body>
+	<header role="banner">
+	   <h1> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9DqfTVvsWcT-AWi8fL8jlUygKiyjPxTzX7A8_kuJM8gDLvjiIWw" alt="JavaScript logo image" class="logo-img">Quiz</h1>
+	</header>
+	<main role="main">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="start-section1">
+						<p>Welcome to JavaScript Quiz!</p>
+						Enter No of Question: <input type="number" id="numOfQues1" name="numOfQues1"><br/>
+						Enter Range: <input type="number" id="range1" name="range1"><br/>
+						Select Operator: <select id="opr1">
+							<option value="-1">Random</option>
+							<option value="0">+</option>
+							<option value="1">-</option>
+							<option value="2">*</option>
+							<option value="3">/</option>
+						</select><br/>
+						<span id="errorMsg" style="display:none;">You can enter between 3 to 20 only</span><br/><br/>
+						<input type="button" value="Start Quiz" class="start-button js-start-button1">
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<section class="start-section">
+						<p>Welcome to JavaScript Quiz!</p>
+						Enter No of Question: <input type="number" id="numOfQues" name="numOfQues"><br/>
+						Enter Range: <input type="number" id="range" name="range"><br/>
+						Select Operator: <select id="opr">
+							<option value="-1">Random</option>
+							<option value="0">+</option>
+							<option value="1">-</option>
+							<option value="2">*</option>
+							<option value="3">/</option>
+						</select><br/>
+						<span id="errorMsg" style="display:none;">You can enter between 3 to 20 only</span><br/><br/>
+						<input type="button" value="Start Quiz" class="start-button js-start-button">
+				</section>
+			</div>
+		</div>
+	  
+	<div class="row">
+		<div class="col-sm-6">
+		<div class="quiz-box">
+			 <div class="progress-section1">
+			    <span class="question-count1"></span>
+			    <hr>
+			    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ_wbUm1vMiakLbNj1q4biA8lro-mtV_OjvS_wG6q-_9M5peKRBQ" alt="score board image" class="score-img">
+			    <span class="score-card1"></span>
+			 </div>
+			 
+		  <div class="quiz-section">
+		 	  <form class="questions-form">
+				  <p id="ques1"></p>
+				  <label class="options">
+				    <input  id="answer1" type="number" name="answer1">
+				    <span></span>
+				  </label>
+				  <input type="button" value="Submit Answer" class="submit-button js-submit-button1">
+			  </form>	
+			</div>
+		</div>
+		
+		</div>	 
+		<div class="col-sm-6">
+		  <div class="quiz-box">
+			 <div class="progress-section">
+			    <span class="question-count"></span>
+			    <hr>
+			    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ_wbUm1vMiakLbNj1q4biA8lro-mtV_OjvS_wG6q-_9M5peKRBQ" alt="score board image" class="score-img">
+			    <span class="score-card"></span>
+			 </div>
+			 
+		  <div class="quiz-section">
+		 	  <form class="questions-form">
+				  <p></p>
+				  <label class="options">
+				    <input  id="answer" type="number" name="answer">
+				    <span></span>
+				  </label>
+				  <input type="button" value="Submit Answer" class="submit-button js-submit-button">
+			  </form>	
+			</div>
+		</div>
+		</div>
+		
+	</div>
+
+      <section class="feedback-section">
+        <div class="popup-box">
+          <button type="button" class="close-button js-close-button">X</button>
+          <img src="" class="feedback-icon">
+          <span id="popup-text"></span>
+        </div>
+      </section>
+      
+		  <section class="end-section">
+		  	<h4></h4>
+		  	<div class="correct">
+		  	  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG7HVtoF91KK85ZKPlBL0wzdW8URDpziD2PRsFZm4awGyD2BS-" alt="correct-icon">
+		  	  <span class="count"></span>
+		  	 </div>
+		  	 <div class="wrong">
+		  	   	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyGk_AHvtphypbgsJNN6qI1qX7v1b2vRXBgLwgGMcSZ95oZqaqug" alt="wrong-icon">
+		    	  <span class="count"></span>
+		  	 </div>
+		     <input type="button" class="startover-button js-startover-button" value="Start Over">
+		  </section>
+  </main>
+	<script src="//code.jquery.com/jquery.min.js"></script>
+  <script type="text/javascript" src="/javascripts/index.js"></script>
+</body>
+</html>

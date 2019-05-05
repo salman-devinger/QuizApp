@@ -1,0 +1,160 @@
+*{
+  box-sizing: border-box;
+}
+body{
+ background-color: #008080; /*#eee5e5*/
+ font-size: 15px;
+}
+header{
+  border-radius: 10px;
+  text-align: center;
+  height: 80px;
+  margin: 20px;
+  background-color: white;
+  padding: 3px;
+}
+hr {
+  border-bottom: 3px solid red;
+  margin-bottom: 10px;
+}
+.logo-img{
+  width: 55px;
+  height: 50px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.start-section1, .end-section1, .start-section2, .end-section2, .popup-box1, .popup-box2{
+   font-size: 20px;
+   background-color: white;
+}
+.start-section1, .end-section1, .start-section2, .end-section2{
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  margin: 0 auto;
+  max-width: 600px;
+}
+.start-button{
+  /*background-color: #008CBA;*/
+  border-radius: 12px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #006600;
+  padding: 10px 15px;
+}
+.start-button:hover{
+  background-color:  #1aa3ff;
+}
+.quiz-box1, .quiz-box2{
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 5;
+  box-shadow: 5px 5px #a3c2c2;
+  position: relative;
+}
+
+.progress-section1, .progress-section2, .questions-form, .score-card1, .score-card2, .title-section1{
+  padding: 5px;
+}
+
+.score-img{
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 450px;
+  top: 10px;
+  margin: 0px;
+}
+
+.score-card1, .score-card2{
+ position: absolute;
+ left: 500px;
+ top: 25px;
+ font-weight: bold;
+ font-size: 20px;
+}
+
+.questions-form p{
+  font-size: 18px;
+}
+.options{
+  display: block;
+  border: 1px solid #e0e0d1;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.submit-button{
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 5px;
+  margin: 0 auto;
+  display: block;
+}
+.feedback-section1, .feedback-section2{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: rgba(0,0,0,0.5);
+ }
+.popup-box1,.popup-box2{
+  max-width: 600px;
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 180px;
+  position: relative;
+}
+#popup-text{
+  display: block;
+  text-align: center;
+}
+.close-button{
+  display: block;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background: #ebebe0;
+  border-radius: 800px;
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  font-size: 20px;
+}
+.popup-box1 img, .popup-box2 img{
+  height: 150px;
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+.end-section1 h4, .end-section2 h4{
+  margin: 0px;
+}
+.end-section1 img, .end-section2 img{
+  height: 35px;
+  width: 35px;
+  margin: 10px;
+  vertical-align: middle;
+}
+.count{
+  font-size: 20px;
+}
+.startover-button{
+  margin-top: 15px;
+  font-size: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 3px #27496d;
+}
